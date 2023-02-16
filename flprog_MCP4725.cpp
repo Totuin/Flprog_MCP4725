@@ -3,7 +3,7 @@
 FLProgMCP4725::FLProgMCP4725(FLProgI2C *device, uint8_t i2c_address)
 {
     i2cDevice = device;
-    address = i2c_address;
+    addres = i2c_address;
 }
 
 bool FLProgMCP4725::setVoltage(uint16_t output, bool writeEEPROM, uint32_t dac_frequency)
@@ -22,7 +22,7 @@ bool FLProgMCP4725::setVoltage(uint16_t output, bool writeEEPROM, uint32_t dac_f
     }
     packet[1] = output / 16;
     packet[2] = (output % 16) << 4;
-    bool result = i2cDevice->fullWrite(address, packet, 3);
+    bool result = i2cDevice->fullWrite(addres, packet, 3);
     i2cDevice->resetSpeedFrom(dac_frequency);
     return !result;
 }
