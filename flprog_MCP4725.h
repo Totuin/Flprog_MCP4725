@@ -1,6 +1,7 @@
 #pragma once
 #include "Arduino.h"
 #include "flprogUtilites.h"
+#include "flprogI2C.h"
 
 #define MCP4725_I2CADDR_DEFAULT 0x62
 #define MCP4725_CMD_WRITEDAC 0x40
