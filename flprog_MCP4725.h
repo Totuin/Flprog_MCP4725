@@ -10,6 +10,6 @@
 class FLProgMCP4725 : public FLProgI2cBasicSensor
 {
 public:
-    FLProgMCP4725(FLProgI2C *device, uint8_t i2c_address = MCP4725_I2CADDR_DEFAULT);
+    FLProgMCP4725(AbstractFLProgI2C *device, uint8_t i2c_address = MCP4725_I2CADDR_DEFAULT);
     bool setVoltage(uint16_t output, bool writeEEPROM, uint32_t dac_frequency = 400000);
 };

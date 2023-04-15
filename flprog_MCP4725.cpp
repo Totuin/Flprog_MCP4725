@@ -1,6 +1,6 @@
 #include "flprog_MCP4725.h"
 
-FLProgMCP4725::FLProgMCP4725(FLProgI2C *device, uint8_t i2c_address)
+FLProgMCP4725::FLProgMCP4725(AbstractFLProgI2C *device, uint8_t i2c_address)
 {
     i2cDevice = device;
     addres = i2c_address;
