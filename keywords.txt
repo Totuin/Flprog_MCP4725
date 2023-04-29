@@ -1,0 +1,19 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+#######################################
+# # Datatypes (KEYWORD1)
+#######################################
+FLProgMCP4725	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setVoltage	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+MCP4725_CMD_WRITEDAC	LITERAL1
+MCP4725_CMD_WRITEDACEEPROM	LITERAL1
+MCP4725_I2CADDR_DEFAULT	LITERAL1
